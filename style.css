@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fira+Sans:wght@100&family=PT+Sans&family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@300;500;700&display=swap');
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Fira Sans', sans-serif;
+ }
+
+ input[type="range"] {
+     -webkit-appearance: none;
+     height: 3px;
+     width: 10%;
+     background: #ddd;
+     border-radius:  5px;
+     outline: none;
+     border: none;
+
+}
+ input::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    
+     height: 10px;
+     width: 10px;
+     background: #28272c;
+     border-radius: 50%;
+     border: 1px solid #18171f;
+     cursor: pointer;
+
+ 
+}
+
+body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background:#e3f2fd;
+}
+
+.wrapper {
+    width:  780px;
+    border-radius:20px;
+    padding: 35px 40px;
+    background: #141414;
+}
+
+.piano-keys .key {
+     list-style: none;
+     color: #a2a2a2;
+}
+
+header .column span {
+     font-weight: 500;
+     font-size: 1.19rem;
+     margin-right: 15px;
+}
+
+header h2 {
+     font-size: 1.6rem;
+}
+
+.volume-slider input {
+     accent-color: #fff;
+}
+
+
+
+header .column {
+     display: flex;
+     align-items: center;
+}
+
+.wrapper header {
+    color: #b2b2b2;
+    display: flex;
+    align-items: center;
+    
+     justify-content: space-between;
+ }
