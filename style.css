@@ -47,15 +47,20 @@ body {
     background: #141414;
 }
 
-.piano-keys .key {
-     list-style: none;
-     color: #a2a2a2;
+.piano-keys  {
+     display: flex;
+     margin-top: 40px;
+     
 }
 
 .piano-keys .key {
      list-style: none;
      color: #a2a2a2;
      text-transform: uppercase;
+     cursor: pointer;
+     position: relative;
+     user-select: ;
+     
 }
 
 .piano-keys .white {
@@ -63,7 +68,28 @@ body {
      width:  70px;
      height: 230px;
      border-radius: 8px;
+     background: linear-gradient(#fff,#eee);
+     border:  1px solid #000;
      
+
+}
+
+.piano-keys .black {
+     z-index: 2;
+     width:  44px;
+     height: 140px;
+     border-radius:0 0 5px 5px;
+     margin:0 -22px 0 -22px;
+     background: linear-gradient(#333,#000);
+}
+
+.piano-keys span {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 1.13rem;
+    text-align: center;
+
 }
 
 header .column span {
