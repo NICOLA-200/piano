@@ -52,6 +52,20 @@ body {
      color: #a2a2a2;
 }
 
+.piano-keys .key {
+     list-style: none;
+     color: #a2a2a2;
+     text-transform: uppercase;
+}
+
+.piano-keys .white {
+
+     width:  70px;
+     height: 230px;
+     border-radius: 8px;
+     
+}
+
 header .column span {
      font-weight: 500;
      font-size: 1.19rem;
@@ -80,3 +94,36 @@ header .column {
     
      justify-content: space-between;
  }
+
+
+ .keys-checkbox input[type="checkbox"] {
+     width: 60px;
+     height: 30px;
+     appearance:  none;
+     -webkit-appearance: none;
+     cursor: pointer;
+     border-radius: 30px;
+     position: relative;
+     -moz-appearance: none;
+ 
+     background:  #4b4b4b;
+ }
+
+ .keys-checkbox input::before {
+     content: "";
+     height: 20px;
+     width: 20px;
+     top: 50%;
+     left: 5px;
+     border-radius:inherit;
+     background: #8c8c8c;
+     position: absolute;
+     transform: translateY(-50%);
+
+}
+
+.keys-checkbox input:checked::before {
+
+     left:  35px;
+     background: #f2f2f2;
+}
