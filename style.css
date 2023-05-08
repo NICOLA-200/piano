@@ -83,6 +83,12 @@ body {
      background: linear-gradient(#333,#000);
 }
 
+.piano-keys .black:active {
+     box-shadow:inset -5px 5px 20px rgba(255,250, 255, 0.1);
+     background: linear-gradient(to bottom, #000 0%, #434343 100%);
+
+}
+
 .piano-keys span {
     position: absolute;
     bottom: 20px;
@@ -90,6 +96,10 @@ body {
     font-size: 1.13rem;
     text-align: center;
 
+}
+.piano-keys .white:active {
+     box-shadow:inset -5px 5px 20px rgba(0,0, 0, 0.2);
+     background: linear-gradient(to bottom, #fff 0%, #eee 100%);
 }
 
 header .column span {
