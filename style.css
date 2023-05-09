@@ -7,6 +7,7 @@
      padding: 0;
      box-sizing: border-box;
      font-family: 'Fira Sans', sans-serif;
+     font-weight: 700;
  }
 
  input[type="range"] {
@@ -37,7 +38,8 @@ body {
      align-items: center;
      justify-content: center;
      min-height: 100vh;
-     background:#e3f2fd;
+     background:#9db9bf;
+     padding: 10px;
 }
 
 .wrapper {
@@ -59,7 +61,7 @@ body {
      text-transform: uppercase;
      cursor: pointer;
      position: relative;
-     user-select: ;
+     
      
 }
 
@@ -70,6 +72,7 @@ body {
      border-radius: 8px;
      background: linear-gradient(#fff,#eee);
      border:  1px solid #000;
+     color: black;
      
 
 }
@@ -163,7 +166,7 @@ header .column {
 }
 
 .keys-checkbox input:checked::before {
-
+ 
      left:  35px;
      background: #f2f2f2;
 }
